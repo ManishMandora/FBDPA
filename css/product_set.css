@@ -1,0 +1,118 @@
+ .ui.form {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    max-width: 100%;
+    position: relative !important;
+}
+.header {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+}
+.divide {
+    border-color: #000 !important;
+    margin-top: 1% !important;
+    width: 70% !important;
+}
+
+.inputField
+{
+    border: 1px solid #cacaca ! important;
+    border-radius: 0 ! important; 	
+	
+}
+.search_box
+{
+    border: 1px solid #cacaca ! important;
+    border-radius: 0 ! important; 	
+    margin-left: 21% !important;
+    width: 20% !important;
+    margin-bottom: 1% !important;
+    font-size: 14px !important;
+    height: 45px !important;
+}
+.ui.compact.menu {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    width: 40% !important;
+}
+.ui.dropdown > .dropdown.icon {
+    margin: 0 0 0 13em !important;
+    width: auto;
+}
+ 
+ .ui.button {
+    -moz-user-select: none;
+    background-color: #FFC813 !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    border: 0 none;
+    border-radius: 0.2em !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0) inset;
+    box-sizing: border-box;
+    color: white !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem !important;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    /*  margin: 5% 0 0 !important; */
+    min-height: 1em;
+    outline: 0 none;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: inherit;
+    transition: opacity 0.25s ease 0s, background-color 0.25s ease 0s, color 0.25s ease 0s, background 0.25s ease 0s, box-shadow 0.25s ease 0s;
+    vertical-align: middle;
+     width: 30% !important;
+     float: left;
+}
+
+.ui.done {
+    -moz-user-select: none;
+    background-color: white !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    border: 1px solid black !important;
+    border-radius: 0.2em !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0) inset;
+    box-sizing: border-box;
+    color: black !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem !important;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    /*  margin: 5% 0 0 !important; */
+    min-height: 1em;
+    outline: 0 none;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: inherit;
+    transition: opacity 0.25s ease 0s, background-color 0.25s ease 0s, color 0.25s ease 0s, background 0.25s ease 0s, box-shadow 0.25s ease 0s;
+    vertical-align: middle;
+    width: 5% !important;
+    float: right;
+    margin-right: 22%;
+}
+
+.ui.form textarea, .ui.form input[type="text"], .ui.form input[type="email"], .ui.form input[type="date"], .ui.form input[type="password"], .ui.form input[type="number"], .ui.form input[type="url"], .ui.form input[type="tel"], .ui.form .ui.input {
+    width: 70%;
+}
+
+label {
+    
+}
+
+div{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+a {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: black;
+}

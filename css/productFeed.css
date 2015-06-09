@@ -1,0 +1,77 @@
+.ui.form {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 1%;
+	max-width: 100%;
+	position: relative !important;
+}
+
+.header {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 28px !important;
+    font-weight: lighter;
+}
+.divide {
+	border-color: #000 !important;
+	margin-top: 2%!important;
+	width: 100% !important;
+}
+
+.inputField {
+	border: 1px solid grey ! important;
+	border-radius: 0 ! important;
+	width: 60% !important;
+}
+
+.ui.button {
+    -moz-user-select: none;
+    background-color: #ef070b !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    border: 0 none;
+    border-radius: 0.2em !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0) inset;
+    box-sizing: border-box;
+    color: white !important;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem !important;
+    font-weight: normal;
+    line-height: 1;
+    margin-top: 3% !important;
+    min-height: 1em;
+    outline: 0 none;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: inherit;
+    transition: opacity 0.25s ease 0s, background-color 0.25s ease 0s, color 0.25s ease 0s, background 0.25s ease 0s, box-shadow 0.25s ease 0s;
+    vertical-align: middle;
+    width: 30% !important;
+}
+
+.ui.form .two.fields > .fields, .ui.form .two.fields > .field {
+   padding-left: 0 !important;
+    padding-right: 1%;
+    width: 38% !important;
+}
+
+.browse-button {
+	background-color: #6b4777;
+	border: medium none;
+	border-radius: 2px;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-weight: lighter;
+	height: 40px;
+	margin-left: 4px;
+	width: 15%;
+}
+
+.ui.form .field > label {
+    color: #555;
+    display: block;
+    font-size: 13px !important;
+    margin: 0 0 0.3em !important;
+}

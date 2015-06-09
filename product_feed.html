@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Feed | Reduce Data</title>
+<link rel="icon" href="images/logo.gif" type="image/x-icon">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
+<link href='http://fonts.googleapis.com/css?family=Sans+pro:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/form.css">
+
+<script type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/sidebar_2.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.6.12/jquery.timepicker.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.6.12/jquery.timepicker.css" />
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('.ui.dropdown').dropdown();
+	$(function(){
+    $("#timePicker").timepicker();});
+	$('#check').click(function()
+	{
+	  if($(this).is(':checked'))
+		  {
+	       
+	        $("#Schedule").prop('disabled', true);
+	        $("#timePicker").prop('disabled', true);
+		  }
+	    else{
+	       
+	        $("#Schedule").prop('disabled', false);
+	        $("#timePicker").prop('disabled', false);
+	    }
+	});
+	
+	$(function() {
+	$("#Schedule").datepicker();
+	$("#format").change(function() {
+	$("#Schedule").datepicker("option", "dateFormat", $(this).val());
+	});
+	});
+});
+</script>
+
+
+</head>
+<body>
+
+
+<div class="ui left vertical inverted labeled icon sidebar menu">
+  <a class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
+  <a class="item">
+    <i class="browser icon"></i>
+    Campaigns
+  </a>
+  <a class="item">
+    <i class="tasks icon"></i>
+    Adgroups & Creatives
+  </a>
+  <a class="item">
+    <i class="block layout icon"></i>
+    Product sets
+  </a>
+  <a class="item">
+    <i class="file excel outline icon"></i>
+    Product Feeds
+  </a>
+  <a class="item">
+    <i class="bar chart icon"></i>
+    Reports
+  </a>
+  
+  
+  <a class="item">
+    <i class="settings icon"></i>
+    Settings
+  </a>
+</div>
+
+ 
+<div class="ui left floated launch  side_button "   style="width:20px;" />
+<i class="sidebar icon" ></i>
+</div>
+
+
+<div class="container">
+
+
+  <div align="center">
+     <img class="img-responsive" style=" height: 40px;" src="images/logo.gif">
+  </div> 
+  <div class="ui inverted divider" ></div>
+ 
+  <div class="ui form segment">
+  <form id="productFeedForm" action="http://localhost:8080/ProductFeed" method="post" enctype="multipart/form-data" >
+    <div class="header">
+    Create Product Feed
+    <div class="ui inverted divider" ></div>
+   </div>
+    <div class="field">
+      <label for="FileUrl">File Url</label>
+      <input class="inputField"  id="fileUrl" name="fileurl" placeholder="CSV/TSV Only" type="text" />
+      <div class="errorMsg" id="msgFileUrl"></div>
+    </div>
+ <div class="field">
+      <label for="FileUpload">Or Upload Local File</label>
+	<input type="text" id="mypath" readonly="readonly" placeholder="No file selected" class="inputField"/>  
+	<input type="button" onclick="browse();" value="Upload" class="browse-button"/>
+	<input type="file"  id="realFile" style="display: none;" onchange="setPath(this.value)" name="docFile" class="inputField"/>
+ </div>
+   
+     <div class=" two fields">
+      <div class="field" style="margin-right:-120px; overlap:none;">
+        <label for="Schedule">Schedule</label>
+        <input class="inputField" id="Schedule"  name="schedule"  placeholder="Schedule" type="text" onfocus="removeMessage('msgFileUrl');" />
+         <div class="errorMsg" id="msgSchedule"></div>
+      </div>
+
+      <div class="field left floated right aligned six wide column"  style="margin-top: 2% float: left;margin-left: 7%;margin-top: 3%;">
+        <label for=""></label>
+        <input class="inputField time" id="timePicker"  name="time"  placeholder="time" type="text"  data-scroll-default="6:00am">
+      </div>
+      </div>
+      
+      <div class="chekbox"> 
+        <input type="checkbox" name="check" style="margin-top: 0.5%"/>
+        <label style="color: #555;font-size: 13px">One time only</label>
+     </div>
+      <div class="field" >
+      <button class="ui submit button" onclick="productFeedValidate()">Done</button>
+    </div>
+    </form>
+  </div>
+
+
+</div>
+
+</body>
+</html>

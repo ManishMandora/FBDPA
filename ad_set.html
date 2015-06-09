@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Campaign | DPA</title>
+<link rel="icon" href="images/logo.gif" type="image/x-icon">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/form.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js"></script>
+
+<script src="js/sidebar_2.js"></script>
+</head>
+<body>
+
+
+
+<div class="ui left vertical inverted labeled icon sidebar menu">
+  <a class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
+  <a class="item">
+    <i class="browser icon"></i>
+    Campaigns
+  </a>
+  <a class="item">
+    <i class="tasks icon"></i>
+    Adgroups & Creatives
+  </a>
+  <a class="item">
+    <i class="block layout icon"></i>
+    Product sets
+  </a>
+  <a class="item">
+    <i class="file excel outline icon"></i>
+    Product Feeds
+  </a>
+  <a class="item">
+    <i class="bar chart icon"></i>
+    Reports
+  </a>
+  
+  
+  <a class="item">
+    <i class="settings icon"></i>
+    Settings
+  </a>
+</div>
+
+ 
+<div class="ui left floated launch  side_button "   style="width:20px;" />
+<i class="sidebar icon" ></i>
+</div>
+
+
+
+
+<div class="container">
+  <div align="center">
+     <img class="img-responsive" style=" height: 40px;" src="images/logo.gif">
+  </div> 
+  <div class="ui inverted divider" ></div>
+ 
+<div class="ui form segment" style="
+    margin-left: 20%;
+margin-right:20%;">
+    <div class="header">
+Create Ad Set    <div class="ui inverted divider"></div>
+   </div>
+   
+       <div class="field">
+      <label for="FileUrl">Name</label>
+      <input class="inputField" id="fileUrl" placeholder="" type="text">
+    </div>
+    
+    <div class="field">
+      <label for="TargetCountries">Product Id</label>
+      <input class="inputField" id="targetCountries" placeholder="" type="text">
+    </div>
+   
+    
+    
+    
+    
+    <div class="field">
+      <label for="TargetCountries">Bid Price</label>
+      <input class="inputField" id="targetCountries" placeholder="" type="text">
+    </div>
+    
+     <div class="field">
+      <label for="TargetCountries">Daily budget</label>
+      <input class="inputField" id="targetCountries" placeholder="" type="text">
+    </div>
+
+      <label for="TargetCountries">Add Targeting:</label>
+
+       <div class="ui inverted divider" ></div>
+
+ <label> Select Gender</label><br/><br/>
+      <div class="ui fluid selection dropdown">
+
+    <i class="dropdown icon"></i>
+
+    <span class="default text">Select Type</span>
+    <div class="menu">
+      <div class="item">
+        <span class="right floated description">10 new</span>
+        18-24
+      </div>
+      <div class="item">
+        <span class="right floated description">10 new</span>
+        25-35
+      </div>
+      <div class="item">
+        <span class="right floated description">10 new</span>
+        35-45
+      </div>
+      <div class="item">
+        <i class="attention right floated icon"></i>
+45-50
+      </div>
+        
+    </div>
+  </div>
+
+
+
+<br/><br/>
+
+<div class="field">
+      <label for="TargetCountries">Interests</label>
+
+ 
+
+      
+      <div class="ui multiple selection dropdown">
+  <!-- This will receive comma separated value like OH,TX,WY !-->
+  <input name="interests" type="hidden">
+  <i class="dropdown icon"></i>
+  <div class="default text">Photography</div>
+  <div class="menu">
+    <div data-value="AL">Sports</div>
+    <div data-value="AK">Autos</div>
+    <div data-value="AZ">Music</div>
+    <div data-value="AR">Painting</div>
+    <div data-value="CA">Casual gaming</div>
+    <!-- Saving your scroll sanity !-->
+    <div data-value="OH">Console gaming</div>
+    <div data-value="OK">Reading</div>
+    <div data-value="OR">Poetry</div>
+    <div data-value="PA">Movies</div>
+    <div data-value="RI">Partying</div>
+    
+  </div>
+</div> 
+<script type="text/javascript">
+$('#interests')
+  .dropdown()
+;
+    
+    </script>
+    </div>
+      <br/><br/>
+     
+     <div class="field">
+      <button class="ui submit button">Next</button>
+     </div>
+     </div>
+      </div>    <div class="header">
+    
+     
+  </div>
+</div>
+
+</body>
+</html>
